@@ -51,6 +51,6 @@ app.delete('/deleteinfluencer/:id', (req, res)=>{
     .catch((err) => res.json(err));
 })
 
-app.listen(process.env.BASE_PORT , function () {
+app.listen(process.env.BASE_PORT || 3001 , function () {
   console.log("Server is running");
 });
